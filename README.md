@@ -18,7 +18,6 @@ You can also drop an `NAMenuView` in an existing view controller and implement i
 similar to UITableViewDelegate methods). 
 
 Adding a menu item is only a few lines of code:
-`
 
 	// First Item
 	NAMenuItem *item1 = [[[NAMenuItem alloc] initWithTitle:@"First Item"
