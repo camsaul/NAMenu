@@ -32,10 +32,10 @@ This library is distributed under the terms of the Apache license.
 While not required, I greatly encourage and appreciate any improvements that you make
 to this library be contributed back for the benefit of all who use NAMenu.
 
-[cammsaul]: http://cammsaul.com
+[cammsaul]: http://camsaul.com
 
 Screenshots
 -----------
-![Portrait Mode](Screenshots/screenshot1.png)
-![Landscape Mode](Screenshots/screenshot2.png)
-![Landscape Mode, Scrolled](Screenshots/screenshot3.png)
+![Portrait Mode](http://www.blenderheadstudios.com/wp-content/uploads/2012/02/screeshot1.png)
+![Landscape Mode](http://www.blenderheadstudios.com/wp-content/uploads/2012/02/screeshot2.png)
+![Landscape Mode, Scrolled](http://www.blenderheadstudios.com/wp-content/uploads/2012/02/screeshot3.png)
