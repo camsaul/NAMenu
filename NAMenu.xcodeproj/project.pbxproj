@@ -13,8 +13,16 @@
 		EEA0C63914F3359300DAF1DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EEA0C63714F3359300DAF1DA /* InfoPlist.strings */; };
 		EEA0C63B14F3359300DAF1DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA0C63A14F3359300DAF1DA /* main.m */; };
 		EEA0C63F14F3359300DAF1DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA0C63E14F3359300DAF1DA /* AppDelegate.m */; };
-		EEA0C64214F3359300DAF1DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA0C64114F3359300DAF1DA /* ViewController.m */; };
-		EEA0C64514F3359300DAF1DA /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEA0C64314F3359300DAF1DA /* ViewController.xib */; };
+		EEA0C64214F3359300DAF1DA /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA0C64114F3359300DAF1DA /* MenuViewController.m */; };
+		EEA0C65114F338A400DAF1DA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EEA0C65014F338A400DAF1DA /* icon.png */; };
+		EEA0C65314F338AD00DAF1DA /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EEA0C65214F338AD00DAF1DA /* icon@2x.png */; };
+		EEA0C65E14F33EA800DAF1DA /* NAMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA0C65614F33EA800DAF1DA /* NAMenuItem.m */; };
+		EEA0C65F14F33EA800DAF1DA /* NAMenuItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA0C65814F33EA800DAF1DA /* NAMenuItemView.m */; };
+		EEA0C66014F33EA800DAF1DA /* NAMenuItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEA0C65914F33EA800DAF1DA /* NAMenuItemView.xib */; };
+		EEA0C66114F33EA800DAF1DA /* NAMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA0C65B14F33EA800DAF1DA /* NAMenuView.m */; };
+		EEA0C66214F33EA800DAF1DA /* NAMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA0C65D14F33EA800DAF1DA /* NAMenuViewController.m */; };
+		EEA0C66614F3408700DAF1DA /* SampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA0C66414F3408600DAF1DA /* SampleViewController.m */; };
+		EEA0C66714F3408700DAF1DA /* SampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEA0C66514F3408700DAF1DA /* SampleViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +30,28 @@
 		EEA0C62E14F3359300DAF1DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EEA0C63014F3359300DAF1DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EEA0C63214F3359300DAF1DA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		EEA0C63614F3359300DAF1DA /* NAMenu-Info.plist */ = {isa = PBXFileReference; path = "NAMenu-Info.plist"; sourceTree = "<group>"; };
+		EEA0C63614F3359300DAF1DA /* NAMenu-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NAMenu-Info.plist"; sourceTree = "<group>"; };
 		EEA0C63814F3359300DAF1DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EEA0C63A14F3359300DAF1DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EEA0C63C14F3359300DAF1DA /* NAMenu-Prefix.pch */ = {isa = PBXFileReference; path = "NAMenu-Prefix.pch"; sourceTree = "<group>"; };
-		EEA0C63D14F3359300DAF1DA /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		EEA0C63C14F3359300DAF1DA /* NAMenu-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NAMenu-Prefix.pch"; sourceTree = "<group>"; };
+		EEA0C63D14F3359300DAF1DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EEA0C63E14F3359300DAF1DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EEA0C64014F3359300DAF1DA /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
-		EEA0C64114F3359300DAF1DA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		EEA0C64414F3359300DAF1DA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		EEA0C64014F3359300DAF1DA /* MenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		EEA0C64114F3359300DAF1DA /* MenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		EEA0C65014F338A400DAF1DA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		EEA0C65214F338AD00DAF1DA /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../icon@2x.png"; sourceTree = "<group>"; };
+		EEA0C65514F33EA800DAF1DA /* NAMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NAMenuItem.h; path = Source/NAMenuItem.h; sourceTree = "<group>"; };
+		EEA0C65614F33EA800DAF1DA /* NAMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NAMenuItem.m; path = Source/NAMenuItem.m; sourceTree = "<group>"; };
+		EEA0C65714F33EA800DAF1DA /* NAMenuItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NAMenuItemView.h; path = Source/NAMenuItemView.h; sourceTree = "<group>"; };
+		EEA0C65814F33EA800DAF1DA /* NAMenuItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NAMenuItemView.m; path = Source/NAMenuItemView.m; sourceTree = "<group>"; };
+		EEA0C65914F33EA800DAF1DA /* NAMenuItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NAMenuItemView.xib; path = Source/NAMenuItemView.xib; sourceTree = "<group>"; };
+		EEA0C65A14F33EA800DAF1DA /* NAMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NAMenuView.h; path = Source/NAMenuView.h; sourceTree = "<group>"; };
+		EEA0C65B14F33EA800DAF1DA /* NAMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NAMenuView.m; path = Source/NAMenuView.m; sourceTree = "<group>"; };
+		EEA0C65C14F33EA800DAF1DA /* NAMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NAMenuViewController.h; path = Source/NAMenuViewController.h; sourceTree = "<group>"; };
+		EEA0C65D14F33EA800DAF1DA /* NAMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NAMenuViewController.m; path = Source/NAMenuViewController.m; sourceTree = "<group>"; };
+		EEA0C66314F3408600DAF1DA /* SampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleViewController.h; sourceTree = "<group>"; };
+		EEA0C66414F3408600DAF1DA /* SampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleViewController.m; sourceTree = "<group>"; };
+		EEA0C66514F3408700DAF1DA /* SampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +71,9 @@
 		EEA0C61F14F3359300DAF1DA = {
 			isa = PBXGroup;
 			children = (
-				EEA0C63414F3359300DAF1DA /* NAMenu */,
+				EEA0C65414F33E8E00DAF1DA /* NAMenu */,
+				EEA0C63414F3359300DAF1DA /* Example Project */,
+				EEA0C64B14F3386300DAF1DA /* Resources */,
 				EEA0C62D14F3359300DAF1DA /* Frameworks */,
 				EEA0C62B14F3359300DAF1DA /* Products */,
 			);
@@ -74,16 +97,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EEA0C63414F3359300DAF1DA /* NAMenu */ = {
+		EEA0C63414F3359300DAF1DA /* Example Project */ = {
 			isa = PBXGroup;
 			children = (
 				EEA0C63D14F3359300DAF1DA /* AppDelegate.h */,
 				EEA0C63E14F3359300DAF1DA /* AppDelegate.m */,
-				EEA0C64014F3359300DAF1DA /* ViewController.h */,
-				EEA0C64114F3359300DAF1DA /* ViewController.m */,
-				EEA0C64314F3359300DAF1DA /* ViewController.xib */,
+				EEA0C64014F3359300DAF1DA /* MenuViewController.h */,
+				EEA0C64114F3359300DAF1DA /* MenuViewController.m */,
+				EEA0C66314F3408600DAF1DA /* SampleViewController.h */,
+				EEA0C66414F3408600DAF1DA /* SampleViewController.m */,
+				EEA0C66514F3408700DAF1DA /* SampleViewController.xib */,
 				EEA0C63514F3359300DAF1DA /* Supporting Files */,
 			);
+			name = "Example Project";
 			path = NAMenu;
 			sourceTree = "<group>";
 		};
@@ -96,6 +122,32 @@
 				EEA0C63C14F3359300DAF1DA /* NAMenu-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EEA0C64B14F3386300DAF1DA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EEA0C65214F338AD00DAF1DA /* icon@2x.png */,
+				EEA0C65014F338A400DAF1DA /* icon.png */,
+			);
+			name = Resources;
+			path = NAMenu;
+			sourceTree = "<group>";
+		};
+		EEA0C65414F33E8E00DAF1DA /* NAMenu */ = {
+			isa = PBXGroup;
+			children = (
+				EEA0C65514F33EA800DAF1DA /* NAMenuItem.h */,
+				EEA0C65614F33EA800DAF1DA /* NAMenuItem.m */,
+				EEA0C65714F33EA800DAF1DA /* NAMenuItemView.h */,
+				EEA0C65814F33EA800DAF1DA /* NAMenuItemView.m */,
+				EEA0C65914F33EA800DAF1DA /* NAMenuItemView.xib */,
+				EEA0C65A14F33EA800DAF1DA /* NAMenuView.h */,
+				EEA0C65B14F33EA800DAF1DA /* NAMenuView.m */,
+				EEA0C65C14F33EA800DAF1DA /* NAMenuViewController.h */,
+				EEA0C65D14F33EA800DAF1DA /* NAMenuViewController.m */,
+			);
+			name = NAMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +201,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEA0C63914F3359300DAF1DA /* InfoPlist.strings in Resources */,
-				EEA0C64514F3359300DAF1DA /* ViewController.xib in Resources */,
+				EEA0C65114F338A400DAF1DA /* icon.png in Resources */,
+				EEA0C65314F338AD00DAF1DA /* icon@2x.png in Resources */,
+				EEA0C66014F33EA800DAF1DA /* NAMenuItemView.xib in Resources */,
+				EEA0C66714F3408700DAF1DA /* SampleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +217,12 @@
 			files = (
 				EEA0C63B14F3359300DAF1DA /* main.m in Sources */,
 				EEA0C63F14F3359300DAF1DA /* AppDelegate.m in Sources */,
-				EEA0C64214F3359300DAF1DA /* ViewController.m in Sources */,
+				EEA0C64214F3359300DAF1DA /* MenuViewController.m in Sources */,
+				EEA0C65E14F33EA800DAF1DA /* NAMenuItem.m in Sources */,
+				EEA0C65F14F33EA800DAF1DA /* NAMenuItemView.m in Sources */,
+				EEA0C66114F33EA800DAF1DA /* NAMenuView.m in Sources */,
+				EEA0C66214F33EA800DAF1DA /* NAMenuViewController.m in Sources */,
+				EEA0C66614F3408700DAF1DA /* SampleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,14 +237,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		EEA0C64314F3359300DAF1DA /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EEA0C64414F3359300DAF1DA /* en */,
-			);
-			name = ViewController.xib;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -193,7 +245,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -217,7 +269,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SampleViewController.h
 //  NAMenu
 //
 //  Created by Cameron Saul on 2/20/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface SampleViewController : UIViewController
 
 @end

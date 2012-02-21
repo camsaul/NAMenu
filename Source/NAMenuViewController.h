@@ -1,5 +1,5 @@
 //
-//  AppDelegate.m
+//  NAMenuViewController.h
 //
 //  Created by Cameron Saul on 02/20/2012.
 //  Copyright 2012 Cameron Saul. All rights reserved.
@@ -23,30 +23,10 @@
 //  THE SOFTWARE.
 //
 
+#import "NAMenuView.h"
 
-#import "AppDelegate.h"
+@interface NAMenuViewController : UIViewController<NAMenuViewDelegate>
 
-#import "MenuViewController.h"
-
-@implementation AppDelegate
-
-@synthesize window = _window;
-@synthesize viewController = _viewController;
-
-- (void)dealloc
-{
-	[_window release];
-	[_viewController release];
-    [super dealloc];
-}
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-	self.viewController = [[[MenuViewController alloc] init] autorelease];
-	self.window.rootViewController = [[[UINavigationController alloc] initWithRootViewController:self.viewController] autorelease];
-    [self.window makeKeyAndVisible];
-    return YES;
-}
+@property (nonatomic, retain) NSArray *menuItems;
 
 @end

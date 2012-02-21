@@ -1,5 +1,5 @@
 //
-//  AppDelegate.m
+//  NAMenuView.h
 //
 //  Created by Cameron Saul on 02/20/2012.
 //  Copyright 2012 Cameron Saul. All rights reserved.
@@ -23,30 +23,25 @@
 //  THE SOFTWARE.
 //
 
+#import "NAMenuItem.h"
 
-#import "AppDelegate.h"
+@class NAMenuView;
+@protocol NAMenuViewDelegate <NSObject>
+- (NSUInteger)menuViewNumberOfItems:(NAMenuView *)menuView;
+- (NAMenuItem *)menuView:(NAMenuView *)menuView itemForIndex:(NSUInteger)index;
+- (void)menuView:(NAMenuView *)menuView didSelectItemAtIndex:(NSUInteger)index;
+@end
 
-#import "MenuViewController.h"
+@interface NAMenuView : UIScrollView
 
-@implementation AppDelegate
+@property (nonatomic, assign) id<NAMenuViewDelegate>menuDelegate;
 
-@synthesize window = _window;
-@synthesize viewController = _viewController;
-
-- (void)dealloc
-{
-	[_window release];
-	[_viewController release];
-    [super dealloc];
-}
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-	self.viewController = [[[MenuViewController alloc] init] autorelease];
-	self.window.rootViewController = [[[UINavigationController alloc] initWithRootViewController:self.viewController] autorelease];
-    [self.window makeKeyAndVisible];
-    return YES;
-}
+/**
+ * You can use these properties if you would like a different number of columns or
+ * different-sized menu items.
+ */
+@property (nonatomic) NSUInteger columnCountPortrait; // default is 3
+@property (nonatomic) NSUInteger columnCountLandscape; // default is 4
+@property (nonatomic) CGSize itemSize; // default is 100x100.
 
 @end

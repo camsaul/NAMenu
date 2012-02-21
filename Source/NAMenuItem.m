@@ -1,5 +1,5 @@
 //
-//  AppDelegate.m
+//  NAMenuItem.m
 //
 //  Created by Cameron Saul on 02/20/2012.
 //  Copyright 2012 Cameron Saul. All rights reserved.
@@ -23,30 +23,32 @@
 //  THE SOFTWARE.
 //
 
+#import "NAMenuItem.h"
 
-#import "AppDelegate.h"
+@implementation NAMenuItem
+@synthesize title;
+@synthesize icon;
+@synthesize targetViewControllerClass;
 
-#import "MenuViewController.h"
+#pragma mark - Memory Management
 
-@implementation AppDelegate
-
-@synthesize window = _window;
-@synthesize viewController = _viewController;
-
-- (void)dealloc
-{
-	[_window release];
-	[_viewController release];
-    [super dealloc];
+- (id)initWithTitle:(NSString *)aTitle image:(UIImage *)image vcClass:(Class)targetClass {
+	self = [super init];
+	
+	if (self) {
+		title = [aTitle copy];
+		icon = [image retain];
+		targetViewControllerClass = targetClass;
+	}
+	
+	return self;
 }
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-	self.viewController = [[[MenuViewController alloc] init] autorelease];
-	self.window.rootViewController = [[[UINavigationController alloc] initWithRootViewController:self.viewController] autorelease];
-    [self.window makeKeyAndVisible];
-    return YES;
+- (void)dealloc {
+    [title release];
+    [icon release];
+	
+	[super dealloc];
 }
 
 @end

@@ -1,5 +1,5 @@
 //
-//  AppDelegate.m
+//  NAMenuItemView.h
 //
 //  Created by Cameron Saul on 02/20/2012.
 //  Copyright 2012 Cameron Saul. All rights reserved.
@@ -23,30 +23,18 @@
 //  THE SOFTWARE.
 //
 
+#import <UIKit/UIKit.h>
 
-#import "AppDelegate.h"
-
-#import "MenuViewController.h"
-
-@implementation AppDelegate
-
-@synthesize window = _window;
-@synthesize viewController = _viewController;
-
-- (void)dealloc
-{
-	[_window release];
-	[_viewController release];
-    [super dealloc];
+@interface NAMenuItemView : UIView {
+	NSInteger tag;
 }
+@property (retain, nonatomic) IBOutlet UIImageView *imageView;
+@property (retain, nonatomic) IBOutlet UILabel *label;
+@property (retain, nonatomic) IBOutlet UIButton *button;
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-	self.viewController = [[[MenuViewController alloc] init] autorelease];
-	self.window.rootViewController = [[[UINavigationController alloc] initWithRootViewController:self.viewController] autorelease];
-    [self.window makeKeyAndVisible];
-    return YES;
-}
+/**
+ * Supports UIButton-style adding targets
+ */
+- (void)addTarget:(id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents;
 
 @end
