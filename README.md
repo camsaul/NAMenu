@@ -37,8 +37,8 @@ to this library be contributed back for the benefit of all who use NAMenu.
 
 Screenshots
 -----------
-![Portrait Mode](http://www.blenderheadstudios.com/wp-content/uploads/2012/02/screeshot1.png)
+![Portrait Mode](http://www.camsaul.com/wp-content/uploads/2012/02/screeshot1.png)
 
-![Landscape Mode](http://www.blenderheadstudios.com/wp-content/uploads/2012/02/screenshot2.png)
+![Landscape Mode](http://www.camsaul.com/wp-content/uploads/2012/02/screenshot2.png)
 
-![Landscape Mode, Scrolled](http://www.blenderheadstudios.com/wp-content/uploads/2012/02/screenshot3.png)
+![Landscape Mode, Scrolled](http://www.camsaul.com/wp-content/uploads/2012/02/screenshot3.png)
