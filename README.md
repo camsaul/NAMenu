@@ -18,11 +18,11 @@ You can also drop an `NAMenuView` in an existing view controller and implement i
 similar to UITableViewDelegate methods). 
 
 Adding a menu item is only a few lines of code:
-`// First Item\n
-	NAMenuItem *item1 = [[[NAMenuItem alloc] initWithTitle:@"First Item" \n
-													 image:[UIImage imageNamed:@"icon.png"] \n
-												   vcClass:[SampleViewController class]] autorelease];\n
-	[items addObject:item1];`
+`// First Item`
+`	NAMenuItem *item1 = [[[NAMenuItem alloc] initWithTitle:@"First Item"`
+`													 image:[UIImage imageNamed:@"icon.png"]`
+`												   vcClass:[SampleViewController class]] autorelease];`
+`	[items addObject:item1];`
 
 License
 -------
