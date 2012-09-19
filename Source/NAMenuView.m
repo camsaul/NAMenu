@@ -43,15 +43,28 @@
 	self = [super init];
 	
 	if (self) {
-		itemViews = [[NSMutableArray alloc] init];
-		
-		// set some defaults
-		columnCountPortrait = 3;
-		columnCountLandscape = 4;
-		itemSize = CGSizeMake(100, 100);
+		[self commonInit];
 	}
 	
 	return self;
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    
+    if (self) {
+        [self commonInit];
+    }
+    return self;
+}
+
+- (void)commonInit {
+    itemViews = [[NSMutableArray alloc] init];
+    
+    // set some defaults
+    columnCountPortrait = 3;
+    columnCountLandscape = 4;
+    itemSize = CGSizeMake(100, 100);
 }
 
 - (void)dealloc {
