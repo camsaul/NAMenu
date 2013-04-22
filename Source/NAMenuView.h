@@ -34,7 +34,7 @@
 
 @interface NAMenuView : UIScrollView
 
-@property (nonatomic, assign) id<NAMenuViewDelegate>menuDelegate;
+@property (nonatomic, weak) id<NAMenuViewDelegate>menuDelegate;
 
 /**
  * You can use these properties if you would like a different number of columns or

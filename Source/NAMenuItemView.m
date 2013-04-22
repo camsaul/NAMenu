@@ -48,12 +48,6 @@
 	return self;
 }
 
-- (void)dealloc {
-	[button release];
-	[imageView release];
-	[label release];
-	[super dealloc];
-}
 
 - (void)addTarget:(id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents {
 	[self.button addTarget:target action:action forControlEvents:controlEvents];

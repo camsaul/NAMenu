@@ -27,7 +27,7 @@
 #import "NAMenuItemView.h"
 
 @interface NAMenuView()
-@property (nonatomic, retain) NSMutableArray *itemViews;
+@property (nonatomic, strong) NSMutableArray *itemViews;
 - (void)setupItemViews;
 - (void)itemPressed:(id)sender;
 @end
@@ -67,13 +67,6 @@
     itemSize = CGSizeMake(100, 100);
 }
 
-- (void)dealloc {
-	menuDelegate = nil;
-	
-	[itemViews release];
-	
-	[super dealloc];
-}
 
 
 #pragma mark - View Lifecycle
@@ -136,7 +129,7 @@
 	NSUInteger numItems = [self.menuDelegate menuViewNumberOfItems:self];
 	
 	for (NSUInteger i = 0; i < numItems; i++) {
-		NAMenuItemView *itemView = [[[NAMenuItemView alloc] init] autorelease];
+		NAMenuItemView *itemView = [[NAMenuItemView alloc] init];
 		NAMenuItem *menuItem = [self.menuDelegate menuView:self itemForIndex:i];
 								
 		itemView.frame = CGRectMake(0, 0, self.itemSize.width, self.itemSize.height);

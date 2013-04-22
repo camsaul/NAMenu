@@ -28,9 +28,9 @@
 @interface NAMenuItemView : UIView {
 	NSInteger tag;
 }
-@property (retain, nonatomic) IBOutlet UIImageView *imageView;
-@property (retain, nonatomic) IBOutlet UILabel *label;
-@property (retain, nonatomic) IBOutlet UIButton *button;
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+@property (strong, nonatomic) IBOutlet UILabel *label;
+@property (strong, nonatomic) IBOutlet UIButton *button;
 
 /**
  * Supports UIButton-style adding targets
