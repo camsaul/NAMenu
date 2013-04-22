@@ -27,6 +27,6 @@
 
 @interface NAMenuViewController : UIViewController<NAMenuViewDelegate>
 
-@property (nonatomic, retain) NSArray *menuItems;
+@property (nonatomic, strong) NSArray *menuItems;
 
 @end

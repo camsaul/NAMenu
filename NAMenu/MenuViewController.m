@@ -49,60 +49,60 @@
 #pragma mark - Local Methods
 
 - (NSArray *)createMenuItems {
-	NSMutableArray *items = [[[NSMutableArray alloc] init] autorelease];
+	NSMutableArray *items = [[NSMutableArray alloc] init];
 	
 	// First Item
-	NAMenuItem *item1 = [[[NAMenuItem alloc] initWithTitle:@"First Item" 
+	NAMenuItem *item1 = [[NAMenuItem alloc] initWithTitle:@"First Item" 
 													 image:[UIImage imageNamed:@"icon.png"] 
-												   vcClass:[SampleViewController class]] autorelease];
+												   vcClass:[SampleViewController class]];
 	[items addObject:item1];
 	
 	// Second Item
-	NAMenuItem *item2 = [[[NAMenuItem alloc] initWithTitle:@"Second Item" 
+	NAMenuItem *item2 = [[NAMenuItem alloc] initWithTitle:@"Second Item" 
 													 image:[UIImage imageNamed:@"icon.png"] 
-												   vcClass:[SampleViewController class]] autorelease];
+												   vcClass:[SampleViewController class]];
 	[items addObject:item2];
 	
 	// Third Item
-	NAMenuItem *item3 = [[[NAMenuItem alloc] initWithTitle:@"Third Item" 
+	NAMenuItem *item3 = [[NAMenuItem alloc] initWithTitle:@"Third Item" 
 													 image:[UIImage imageNamed:@"icon.png"] 
-												   vcClass:[SampleViewController class]] autorelease];
+												   vcClass:[SampleViewController class]];
 	[items addObject:item3];
 	
 	// Fourth Item
-	NAMenuItem *item4 = [[[NAMenuItem alloc] initWithTitle:@"Fourth Item" 
+	NAMenuItem *item4 = [[NAMenuItem alloc] initWithTitle:@"Fourth Item" 
 													 image:[UIImage imageNamed:@"icon.png"] 
-												   vcClass:[SampleViewController class]] autorelease];
+												   vcClass:[SampleViewController class]];
 	[items addObject:item4];
 	
 	// Fifth Item
-	NAMenuItem *item5 = [[[NAMenuItem alloc] initWithTitle:@"Fifth Item" 
+	NAMenuItem *item5 = [[NAMenuItem alloc] initWithTitle:@"Fifth Item" 
 													 image:[UIImage imageNamed:@"icon.png"] 
-												   vcClass:[SampleViewController class]] autorelease];
+												   vcClass:[SampleViewController class]];
 	[items addObject:item5];
 	
 	// Sixth Item
-	NAMenuItem *item6 = [[[NAMenuItem alloc] initWithTitle:@"Sixth Item" 
+	NAMenuItem *item6 = [[NAMenuItem alloc] initWithTitle:@"Sixth Item" 
 													 image:[UIImage imageNamed:@"icon.png"] 
-												   vcClass:[SampleViewController class]] autorelease];
+												   vcClass:[SampleViewController class]];
 	[items addObject:item6];
 	
 	// Seventh Item
-	NAMenuItem *item7 = [[[NAMenuItem alloc] initWithTitle:@"Seventh Item" 
+	NAMenuItem *item7 = [[NAMenuItem alloc] initWithTitle:@"Seventh Item" 
 													 image:[UIImage imageNamed:@"icon.png"] 
-												   vcClass:[SampleViewController class]] autorelease];
+												   vcClass:[SampleViewController class]];
 	[items addObject:item7];
 	
 	// Eighth Item
-	NAMenuItem *item8 = [[[NAMenuItem alloc] initWithTitle:@"Eighth Item" 
+	NAMenuItem *item8 = [[NAMenuItem alloc] initWithTitle:@"Eighth Item" 
 													 image:[UIImage imageNamed:@"icon.png"] 
-												   vcClass:[SampleViewController class]] autorelease];
+												   vcClass:[SampleViewController class]];
 	[items addObject:item8];
 
 	// Ninth Item
-	NAMenuItem *item9 = [[[NAMenuItem alloc] initWithTitle:@"Ninth Item" 
+	NAMenuItem *item9 = [[NAMenuItem alloc] initWithTitle:@"Ninth Item" 
 													 image:[UIImage imageNamed:@"icon.png"] 
-												   vcClass:[SampleViewController class]] autorelease];
+												   vcClass:[SampleViewController class]];
 	[items addObject:item9];
 	
 	return items;

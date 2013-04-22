@@ -23,14 +23,16 @@
 //  THE SOFTWARE.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface NAMenuItem : NSObject
 
-@property (nonatomic, retain) NSString *title;
-@property (nonatomic, retain) UIImage *icon;
-@property (nonatomic, assign) Class targetViewControllerClass;
+@property (nonatomic, strong) NSString *title;
+@property (nonatomic, strong) UIImage *icon;
+@property (nonatomic, weak) Class targetViewControllerClass;
+@property (nonatomic, copy) NSString *storyboardName;
 
 - (id)initWithTitle:(NSString *)title image:(UIImage *)image vcClass:(Class)targetClass;
+- (id)initWithTitle:(NSString *)aTitle image:(UIImage *)image storyBoard:(NSString *)storyBoard;
 
 @end
