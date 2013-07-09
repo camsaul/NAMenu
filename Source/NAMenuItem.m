@@ -37,18 +37,26 @@
 	
 	if (self) {
 		title = [aTitle copy];
-		icon = [image retain];
+		icon = image;
 		targetViewControllerClass = targetClass;
+        _storyboardName = nil;
 	}
 	
 	return self;
 }
 
-- (void)dealloc {
-    [title release];
-    [icon release];
+- (id)initWithTitle:(NSString *)aTitle image:(UIImage *)image storyBoard:(NSString *)storyBoard {
+	self = [super init];
 	
-	[super dealloc];
+	if (self) {
+		title = [aTitle copy];
+		icon = image;
+		_storyboardName = storyBoard;
+        targetViewControllerClass = nil;
+	}
+	
+	return self;
 }
+
 
 @end

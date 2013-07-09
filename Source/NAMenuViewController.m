@@ -30,17 +30,12 @@
 
 #pragma mark - Memory Management
 
-- (void)dealloc {
-	[menuItems release];
-	
-	[super dealloc];
-}
 
 
 #pragma mark - View lifecycle
 
 - (void)loadView {
-	NAMenuView *menuView = [[[NAMenuView alloc] init] autorelease];
+	NAMenuView *menuView = [[NAMenuView alloc] init];
 	menuView.menuDelegate = self;
 	self.view = menuView;
 }
@@ -65,8 +60,15 @@
 - (void)menuView:(NAMenuView *)menuView didSelectItemAtIndex:(NSUInteger)index {
 	NSAssert([self menuItems], @"You must set menuItems before attempting to load.");
 	
-	Class class = [[self.menuItems objectAtIndex:index] targetViewControllerClass];
-	UIViewController *viewController = [[[class alloc] init] autorelease];
+    UIViewController *viewController;
+    NAMenuItem *menuItem = [self.menuItems objectAtIndex:index];
+    if (menuItem.storyboardName) {
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:menuItem.storyboardName  bundle:nil];
+        viewController = [sb instantiateInitialViewController];
+    } else {
+        Class class = [menuItem targetViewControllerClass];
+        viewController = [[class alloc] init];
+    }
 	[self.navigationController pushViewController:viewController animated:YES];
 }
 
