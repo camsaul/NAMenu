@@ -1,5 +1,3 @@
-a dead simple SpringBoard-like grid menu for iOS with landscape support
-
 # Introduction
 
 NAMenu is a dead simple grid menu you can use to launch other view controllers. It features smooth animation
@@ -37,6 +35,6 @@ NAMenuItem *item1 = [[[NAMenuItem alloc] initWithTitle:@"First Item"
 
 # License
 
-© 2012-2016 [Cam Saül](http://camsaul.com)
+© 2012 [Cam Saül](http://camsaul.com)
 
 Distributed under the terms of the Apache license.
